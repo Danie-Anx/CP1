@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP1</title>
     <style>
-
-        /* Documentei o código*/
-
-        /* Estilos CSS internos */ 
+        /* Estilos CSS internos */
 
         /* Pseudo-elemento para a imagem de fundo */
         body::after {
@@ -29,28 +26,33 @@
         /* Defina a margem do corpo como zero */
         body {
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            padding: 0;
         }
 
         /* Estilizando o container */
         .container {
-            max-width: 1300px; /* largura máxima do container */
-            margin: 1 auto; /* centraliza horizontalmente */
+            max-width: 1150px; /* largura máxima do container */
+            margin: 0 auto; /* centraliza horizontalmente */
             padding: 20px; /* espaço interno */
             display: grid; /* usando display grid para layout */
             grid-template-columns: auto auto; /* duas colunas */
             grid-column-gap: 10px; /* espaçamento entre colunas */
             align-items: flex-start; /* alinha os itens verticalmente ao topo */
             overflow: hidden; /* para conter a imagem flutuante */
+            margin-left: 220px; /* margem à esquerda */
         }
 
-        /* Estilizando a imagem */
+        /* Estilizando a imagem */  
         .image {
             max-width: 100%; /* largura máxima da imagem */
             height: auto; /* altura automática para manter a proporção */
             display: block; /* exibe a imagem como um bloco */
-            width: 300px; /* largura fixa da imagem */
-            margin-bottom: -20px;/* move a imagem para cima */
-            margin-left: auto; /* move a imagem para a direita */
+            width: 150px; /* largura fixa da imagem */
+            float: left; /* move a imagem para a esquerda */
+            margin-bottom: 20px; /* margem inferior */
         }
 
         /* Estilizando o texto */
@@ -58,7 +60,8 @@
             color: #fff; /* cor do texto */
             font-size: 20px; /* tamanho da fonte */
             line-height: 1.8; /* altura da linha */
-            padding-left: -10px; /* adiciona um pouco de preenchimento à esquerda */
+            overflow: hidden; /* para conter o texto */
+            clear: both; /* limpa a flutuação para garantir que o próximo elemento comece abaixo */
         }
 
         /* Estilizando os links */
@@ -78,17 +81,21 @@
             color: #e47878; /* mudando a cor quando clicado */
         }
 
+  /* Limpar a flutuação para garantir que o próximo elemento comece abaixo */
+  p {
+            clear: both;
+        }
+
     </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #333; padding: 0; color: #fff;">
+<body>
 
     <!-- Início do conteúdo -->
     <div class="container">
-        <!-- Imagem -->
-        <img src="../cp1/img/logan.png" alt="FIAP" class="image">
         <!-- Texto -->
         <div class="text">
             <h1 style="color: #bd1919;">FIAP. O NOVO É AQUI!</h1>
+            <img src="./img/logan.png" alt="FIAP" class="image">
             <p>
                 A FIAP é o centro de excelência em tecnologia mais respeitado do país. Uma história que vem sendo construída dia 
                 após dia, estimulando mentes a vivenciarem a inovação e o empreendedorismo. Porque a FIAP acredita no poder 
@@ -98,16 +105,16 @@
             <h2 style="color: #bd1919;">CONHEÇA OS CURSOS</h2>
             <ul style="list-style-type: disc; padding-left: 20px;">
                 <li><a href="./cursos/adm.html">Administração</a></li>
-                <li><a href="./cursos/analiseDesenvolvimentoSistemas.html">Análise e Desenvolvimento de Software</a></li>
-                <li><a href="./cursos/bancoDeDados.html">Banco de Dados</a></li>
-                <li><a href="./cursos/engenhariaDeComputacao.html">Engenharia da Computação</a></li>
-                <li><a href="./cursos/engenhariaDeProducao.html">Engenharia da Produção</a></li>
-                <li><a href="./cursos/engenhariaMecatronica.html">Engenharia Mecatrônica</a></li>
-                <li><a href="./cursos/gestaoDeTecnologiaDaInformacao.html">Gestão de Tecnologia da Informação</a></li>
-                <li><a href="./cursos/jogosDigitais.html">Jogos Digitais</a></li>
-                <li><a href="./cursos/sistemasDeInformacao.html">Sistemas de Informação</a></li>
-                <li><a href="./cursos/sistemasParaInternet.html">Sistemas para Internet</a></li>
-                <li><a href="./cursos/redeDeComputadores.html">Rede de Computadores</a></li>
+                <li><a href="./cursos/analise_desenvolvimento_sistemas.html">Análise e Desenvolvimento de Software</a></li>
+                <li><a href="./cursos/banco_de_dados.html">Banco de Dados</a></li>
+                <li><a href="./cursos/engenharia_de_computacao.html">Engenharia da Computação</a></li>
+                <li><a href="./cursos/engenharia_de_producao.html">Engenharia da Produção</a></li>
+                <li><a href="./cursos/engenharia_mecatronica.html">Engenharia Mecatrônica</a></li>
+                <li><a href="./cursos/gestao_de_tecnologia_da_informacao.html">Gestão de Tecnologia da Informação</a></li>
+                <li><a href="./cursos/jogos_digitais.html">Jogos Digitais</a></li>
+                <li><a href="./cursos/sistemas_de_informacao.html">Sistemas de Informação</a></li>
+                <li><a href="./cursos/sistemas_para_internet.html">Sistemas para Internet</a></li>
+                <li><a href="./cursos/rede_de_computadores.html">Rede de Computadores</a></li>
             </ul>
         </div>
     </div>

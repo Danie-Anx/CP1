@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP1</title>
     <style>
-        /* Estilos CSS internos */
+        /* Documentei o código*/
+
+        /* Estilos CSS internos */ 
 
         /* Pseudo-elemento para a imagem de fundo */
         body::after {
@@ -14,7 +16,7 @@
             background-size: cover; /* ajusta o tamanho da imagem para cobrir todo o corpo */
             background-position: center; /* posiciona a imagem ao centro do corpo */
             background-repeat: no-repeat; /* não repete a imagem */
-            opacity: 0.7; /* torna a imagem de fundo 70% transparente */
+            opacity: 0.6; /* torna a imagem de fundo 70% transparente */
             position: absolute; /* posiciona o elemento de forma absoluta */
             top: 0; /* alinha o topo do elemento ao topo do corpo */
             left: 0; /* alinha a esquerda do elemento à esquerda do corpo */
@@ -26,18 +28,23 @@
         /* Defina a margem do corpo como zero */
         body {
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            padding: 0;
         }
 
         /* Estilizando o container */
         .container {
-            max-width: 1300px; /* largura máxima do container */
-            margin: 1 auto; /* centraliza horizontalmente */
+            max-width: 1150px; /* largura máxima do container */
+            margin: 0 auto; /* centraliza horizontalmente */
             padding: 20px; /* espaço interno */
             display: grid; /* usando display grid para layout */
             grid-template-columns: auto auto; /* duas colunas */
             grid-column-gap: 10px; /* espaçamento entre colunas */
             align-items: flex-start; /* alinha os itens verticalmente ao topo */
             overflow: hidden; /* para conter a imagem flutuante */
+            margin-left: 200px; /* margem à esquerda */
         }
 
         /* Estilizando a imagem */
@@ -45,17 +52,17 @@
             max-width: 100%; /* largura máxima da imagem */
             height: auto; /* altura automática para manter a proporção */
             display: block; /* exibe a imagem como um bloco */
-            width: 300px; /* largura fixa da imagem */
-            margin-bottom: -20px;/* move a imagem para cima */
-            margin-left: auto; /* move a imagem para a direita */
+            width: 150px; /* largura fixa da imagem */
+            float: left; /* move a imagem para a esquerda */
+            margin-bottom: 20px; /* margem inferior */
         }
 
-        /* Estilizando o texto */
-        .text {
+       .text {
             color: #fff; /* cor do texto */
             font-size: 20px; /* tamanho da fonte */
             line-height: 1.8; /* altura da linha */
-            padding-left: -10px; /* adiciona um pouco de preenchimento à esquerda */
+            padding-left: 10px; /* adiciona um pouco de preenchimento à esquerda */
+            text-align: justify; /* alinha o texto justificado */
         }
 
         /* Estilizando os links */
@@ -86,36 +93,42 @@
             display: inline-block; /* exibir os itens em linha */
         }
 
+        /* Limpar a flutuação para garantir que o próximo elemento comece abaixo */
+        h2 {
+            clear: both;
+        }
 
     </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #333; padding: 0; color: #fff;">
+<body>
 
     <!-- Início do conteúdo -->
     <div class="container">
-        <!-- Imagem -->
-        <img src="../img/logan.png" alt="FIAP" class="image">
         <!-- Texto -->
         <div class="text">
-            <h1 style="color: #bd1919;"> ENGENHARIA DA COMPUTAÇÃO </h1>
-            <h2 style="color: #bd1919;">O Curso</h2>
-            <p>
-                <strong style="color: #bd1919;"> ENGENHARIA DA COMPUTAÇÃO </strong> desenvolve projetos nas áreas de sistemas operacionais, arquitetura de 
-                computadores, redes, robótica e inteligência artificial. 
-                A grade privilegia conhecimentos avançados na área de exatas (física e matemática) e aspectos de eletrônica, controle 
-                e automação, telecomunicações e TI. 
-                Você aprende sobre o ciclo de fabricação (custos, prazos, riscos, qualidade), gerenciamento de equipe, 
-                desenvolvimento de aplicativos, linguagens de programação e empreendedorismo. 
-                Na FIAP, o futuro engenheiro dispõe de um parque tecnológico avançado, laboratórios de química, informática, 
-                fabricação e o ‘Maker Labs’, um dos laboratórios mais modernos de engenharia do Brasil, com impressoras 3D, 
-                usinagem, cortadoras laser e fresadoras de precisão para criação de protótipos e peças em automação simples e com 
-                CNC (Computer Numeric Control).
-            </p>
+            <h1 style="color: #bd1919;"> JOGOS DIGITAIS </h1>
+            <img src="../img/logan.png" alt="FIAP" class="image">
             
+            <h2 style="color: #bd1919;"> O CURSO </h2>
+
+            <p>
+                <strong style="color: #bd1919;"> JOGOS DIGITAIS </strong> 
+                vai te preparar para desenvolver jogos em todas as plataformas: internet, consoles (Playstation, Xbox e 
+                Nintendo), smartphones (aplicativos para celulares e tablets), desktops (PC e Mac), TV digital, simuladores de realidade 
+                virtual e virtualizações (totem tour virtual). 
+                Você vai aprender a idealizar e desenvolver um jogo desde o enredo, passando pela criação de personagens, conceitos 
+                de gameficação, ambientes e objetos de cenários. 
+                A grade contempla conhecimentos de ilustração, programação, inteligência artificial, modelagem 2D e 3D, design, 
+                testes, implantação e gestão. 
+                Todas as aulas são ministradas em laboratório (inclusive laboratório Apple) com a suíte da Autodesk, utilizada em 
+                Hollywood, o Maya, além das ferramentas líderes do mercado como Photoshop e Unity3D. 
+                Os professores do curso são especialistas de mercado, com experiência acadêmica, atuantes na área e proprietários de 
+                empresas que desenvolvem jogos. 
+            </p>
             <ul style="list-style-type: disc; padding-left: 20px;">
-                <li><a href="../cursos/bancoDeDados.html">Curso Anterior</a> | </li>
+                <li><a href="./gestao_de_tecnologia_da_informacao.html">Curso Anterior</a> | </li>
                 <li><a href="../index.html">Página Principal</a> | </li>
-                <li><a href="../cursos/engenhariaDeProducao.html">Próximo Curso</a></li>
+                <li><a href="./sistemas_de_informacao.html">Próximo Curso</a></li>
             </ul>
         </div>
     </div>
