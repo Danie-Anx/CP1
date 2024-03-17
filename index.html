@@ -28,6 +28,8 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #333;
+            height: 100vh; /* altura total da viewport */
+            overflow-y: hidden; /* esconde a barra de rolagem vertical */
             color: #fff;
             padding: 0;
         }
@@ -51,7 +53,6 @@
             height: auto; /* altura automática para manter a proporção */
             display: block; /* exibe a imagem como um bloco */
             width: 150px; /* largura fixa da imagem */
-            float: left; /* move a imagem para a esquerda */
             margin-bottom: 20px; /* margem inferior */
         }
 
@@ -81,9 +82,13 @@
             color: #e47878; /* mudando a cor quando clicado */
         }
 
-  /* Limpar a flutuação para garantir que o próximo elemento comece abaixo */
-  p {
-            clear: both;
+        /* Posiciona a imagem no canto direito */
+        .image-right {
+            float: right;
+            margin-left: 20px; /* Adicione um espaço entre a imagem e o texto */
+            width: 350px;
+            top: -400px;
+            position: relative /* ou relative, dependendo do contexto */
         }
 
     </style>
@@ -116,6 +121,10 @@
                 <li><a href="./cursos/sistemas_para_internet.html">Sistemas para Internet</a></li>
                 <li><a href="./cursos/rede_de_computadores.html">Rede de Computadores</a></li>
             </ul>
+            <!-- Imagem de sites favoritos no canto direito -->
+            <a href="meus_sites_favoritos.html">
+                <img src="./img/sitesFavoritos.jpg" alt="Imagem que irá direcionar para meus sites favoritos" class="image image-right">
+            </a>
         </div>
     </div>
     <!-- Fim do conteúdo -->
